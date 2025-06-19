@@ -9,7 +9,7 @@ Understand how multilingual models (specifically **BLOOM-1.7B**) represent and t
 
 ## Task 1: Embedding Similarity
 
--  **Build** a parallel word list (500–5000 entries) in **English**, **French**, and **Portuguese** — languages supported by BLOOM.
+-  Making a parallel word list (500–5000 entries) in **English**, **French**, and **Portuguese** — languages supported by BLOOM.
 -  **Compute cosine similarity** between word embeddings across languages to check if “meaning” aligns.
 
 ### Task 1 Result
@@ -23,11 +23,12 @@ GPU Used for the task: `Nvidia T4` on `Google Collab`
 
 ##  Task 2: Cross-Lingual Transfer (Zero-Shot Learning)
 
--  **Fine-tune** BLOOM on a downstream task (e.g., **sentiment classification**) using only **English** data (High-Resource Language).
+-  **Fine-tuning** BLOOM on a downstream task (e.g., **sentiment classification**) using only **English** data (High-Resource Language).
 -  **Test** the model on the same task in a **Low-Resource Language** (e.g., **Hindi** or **Swahili**) *without any additional training*.
 
 ###  Goal
 Check if BLOOM can generalize and transfer task knowledge across languages — a key indicator of its multilingual capabilities and usefulness in **low-resource language settings**.
+Bloom chosen due to **Multilingual Pretraining**, then Finetuning.
 
 ---
 
