@@ -24,6 +24,8 @@ Portuguese: **5.2%**
 - Portuguese–English: **0.9153**
 
 GPU Used for the task: `Nvidia T4` on `Google Collab`
+
+Verdict: High average cosine similarity in all 3 pairs signifies that Bloom 1.7B has similar meaning for words in different language since Portuguese having only 5.2% share in total Bloom training dataset  gives similar cosine similariy of english, french pair.
 ---
 
 ##  Task 2: Cross-Lingual Transfer (Zero-Shot Learning)
