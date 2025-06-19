@@ -28,10 +28,12 @@ GPU Used for the task: `Nvidia T4` on `Google Collab`
 
 ###  Goal
 Check if BLOOM can generalize and transfer task knowledge across languages — a key indicator of its multilingual capabilities and usefulness in **low-resource language settings**.
+
 Bloom chosen due to **Multilingual Pretraining**, then Finetuning.
 
 ---
 
 ### Future Note
 This project can be scaled to 15-20 languages in task 1 using 7-10 different LLMs.
+
 Feel free to contribute or explore further improvements!
