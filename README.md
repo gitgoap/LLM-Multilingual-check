@@ -25,7 +25,8 @@ Understand how multilingual models (specifically **BLOOM-1.7B**) represent and t
 
 GPU Used for the task: `Nvidia T4` on `Google Collab`
 
-Verdict: High average cosine similarity in all 3 pairs signifies that Bloom 1.7B has similar meaning for words in different language since Portuguese having only 5.2% share in total Bloom training dataset  gives similar cosine similariy of english, french pair.
+#### Verdict: High average cosine similarity in all 3 pairs signifies that Bloom 1.7B has similar meaning for words in different language since Portuguese having only 5.2% share in total Bloom training dataset  gives similar cosine similariy of english, french pair.
+
 ---
 
 ##  Task 2: Cross-Lingual Transfer (Zero-Shot Learning)
