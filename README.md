@@ -12,6 +12,11 @@ Understand how multilingual models (specifically **BLOOM-1.7B**) represent and t
 -  Making a parallel word list (500–5000 entries) in **English**, **French**, and **Portuguese** — languages supported by BLOOM.
 -  **Compute cosine similarity** between word embeddings across languages to check if “meaning” aligns.
 
+Percentage distibution of 3 language in Bloom dataset (source)[https://huggingface.co/bigscience/bloom-1b7]:
+English: **31.3%**
+French: **13.5%**
+Portuguese: **5.2%**
+
 ### Task 1 Result
 **Average Cosine Similarity:**
 - English–French: **0.9365**
