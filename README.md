@@ -42,6 +42,6 @@ Bloom chosen due to **Multilingual Pretraining**, then Finetuning.
 ---
 
 ### Future Note
-This project can be scaled to 15-20 languages in task 1 using 7-10 different LLMs.
+This project can be scaled to 15-20 languages in task 1 to check multiple different LLMs.
 
 Feel free to contribute or explore further improvements!
