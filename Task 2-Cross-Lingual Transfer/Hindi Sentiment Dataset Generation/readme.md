@@ -1,6 +1,15 @@
+The csv dataset is generated using OpenAI's GPT4o and Claude 4 Sonnet with the below **prompt**.
+
+`count_duplicate.py` script count duplicate rows in the csv.
+
+`remove_duplicate` script deletes duplicate rows and saves it in a new csv file.
+
+All the 2500 rows of this CSV dataset is manually verified for correctness.
+
+> Prompt given to GPT4o for Hindi Sentiment dataset generation.
+```
 Generate a dataset of 250 unique examples of Hindi sentences labeled with sentiment.  
 
-```
 Instructions:
 - Each example must be a single line CSV, in the format:
   
