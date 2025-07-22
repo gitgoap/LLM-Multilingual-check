@@ -29,15 +29,17 @@ GPU Used for the task: `Nvidia T4` on `Google Collab`
 
 ---
 
-##  Task 2: Cross-Lingual Transfer (Zero-Shot Learning)
+### Task 2: Cross-Lingual Transfer (Zero-Shot Learning)
 
 -  **Fine-tuning** BLOOM on a downstream task (e.g., **sentiment classification**) using only **English** data (High-Resource Language).
 -  **Test** the model on the `SentiHin-2500` (Sentimental Analysis Hindi Dataset) in a **Low-Resource Language** (e.g., **Hindi** or **Swahili**) *without any additional training*.
 - Further testing the base Bloom 1.7B on SentiHin-2500 for comparison with the result of above finetuned model.
 
-Dataset Used: 
-GPU: Nvidia T4
-Result
+
+
+
+### Task 2 Result
+
 | Metric     | Finetuned BLOOM (`MLap/bloom1.7-lora-sentiment-analysis-classification`) | Original BLOOM (`bigscience/bloom-1b7`) |
 |------------|-------------------------------------------------------------------------|------------------------------------------|
 | Accuracy   | 0.3392                                                                  | 0.4628                                   |
@@ -45,11 +47,29 @@ Result
 | Recall     | 0.3333                                                                  | 0.4590                                   |
 | F1 Score   | 0.1689                                                                  | 0.4131                                   |
 
-
-###  Goal
+##  Goal
 Check if BLOOM can generalize and transfer task knowledge across languages — a key indicator of its multilingual capabilities and usefulness in **low-resource language settings**.
-
 Bloom chosen due to **Multilingual Pretraining**, then Finetuning.
+
+
+## Dataset and Model Information
+
+### Fine-tuned Model: [MLap/bloom1.7-lora-sentiment-analysis-classification](https://huggingface.co/MLap/bloom1.7-lora-sentiment-analysis-classification)
+
+This model is based on BLOOM-1.7B, fine-tuned using LoRA (Low-Rank Adaptation) for sentiment classification tasks. The fine-tuned model is available on Hugging Face Hub.
+
+### LoRA Finetuning Dataset: [Sp1786/multiclass-sentiment-analysis-dataset](https://huggingface.co/datasets/Sp1786/multiclass-sentiment-analysis-dataset)
+
+The model was fine-tuned on this English multiclass sentiment analysis dataset before being evaluated on the Hindi dataset to assess cross-lingual transfer capabilities.
+
+### Hindi Inference Dataset: [MLap/SentiHin-2500](https://huggingface.co/datasets/MLap/SentiHin-2500)
+
+SentiHin-2500 is a Hindi sentiment analysis dataset containing 2,500 labeled datapoints with three classes: positive, negative, and neutral. **This dataset was specifically created for this project and is publicly available on Hugging Face.**
+
+GPU Used for the task: `Nvidia T4 2x` on `Kaggle`
+
+
+
 
 ---
 
