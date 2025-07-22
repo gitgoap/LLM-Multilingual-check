@@ -5,7 +5,9 @@
 ### Objective
 Understand how multilingual models (specifically **BLOOM-1.7B**) represent and transfer knowledge across languages.
 
----
+
+<img width="512" height="512" alt="Bloom ccreature Jul 22, 2025, 10_33_27 AM" src="https://github.com/user-attachments/assets/6dc002c3-cc97-41f7-9ab4-41dc46b2358a" />
+
 
 ## Task 1: Embedding Similarity
 
