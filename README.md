@@ -32,7 +32,19 @@ GPU Used for the task: `Nvidia T4` on `Google Collab`
 ##  Task 2: Cross-Lingual Transfer (Zero-Shot Learning)
 
 -  **Fine-tuning** BLOOM on a downstream task (e.g., **sentiment classification**) using only **English** data (High-Resource Language).
--  **Test** the model on the same task in a **Low-Resource Language** (e.g., **Hindi** or **Swahili**) *without any additional training*.
+-  **Test** the model on the `SentiHin-2500` (Sentimental Analysis Hindi Dataset) in a **Low-Resource Language** (e.g., **Hindi** or **Swahili**) *without any additional training*.
+- Further testing the base Bloom 1.7B on SentiHin-2500 for comparison with the result of above finetuned model.
+
+Dataset Used: 
+GPU: Nvidia T4
+Result
+| Metric     | Finetuned BLOOM (`MLap/bloom1.7-lora-sentiment-analysis-classification`) | Original BLOOM (`bigscience/bloom-1b7`) |
+|------------|-------------------------------------------------------------------------|------------------------------------------|
+| Accuracy   | 0.3392                                                                  | 0.4628                                   |
+| Precision  | 0.1131                                                                  | 0.5731                                   |
+| Recall     | 0.3333                                                                  | 0.4590                                   |
+| F1 Score   | 0.1689                                                                  | 0.4131                                   |
+
 
 ###  Goal
 Check if BLOOM can generalize and transfer task knowledge across languages — a key indicator of its multilingual capabilities and usefulness in **low-resource language settings**.
@@ -42,6 +54,6 @@ Bloom chosen due to **Multilingual Pretraining**, then Finetuning.
 ---
 
 ### Future Note
-This project can be scaled to 15-20 languages in task 1 to check multiple different LLMs.
+This project can be scaled to 15-20 languages in task 1 to check cross-lingual capability of multiple different LLMs.
 
 Feel free to contribute or explore further improvements!
