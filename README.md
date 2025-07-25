@@ -80,4 +80,6 @@ GPU Used for the task: `Nvidia T4 2x` on `Kaggle`
 ### Future Note
 This project can be scaled to 15-20 languages in task 1 to check cross-lingual capability of multiple different LLMs.
 
+Exploring `Silhouette (clustering)` method in task 1.
+
 Feel free to contribute or explore further improvements!
